@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruce Liang - 学术个人网站</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- 预加载字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </label>
+    </div>
+
+    <div class="language-switch">
+        <button id="zh-btn" class="active">中文</button>
+        <button id="en-btn">EN</button>
+    </div>
+    
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="images/placeholder.svg" alt="Bruce Liang" id="profile-img">
+                </div>
+                <h1 class="name">Bruce Liang</h1>
+                <p class="title">Ph.D. 学生 at 浙江大学</p>
+                
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>杭州, 中国</span>
+                </div>
+                
+                <div class="contact-icons">
+                    <a href="mailto:bruceliang@example.com" class="icon-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/bruceliang" class="icon-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=bruceliang" class="icon-link" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://twitter.com/bruceliang" class="icon-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link active"><i class="fas fa-user"></i> 关于我</a></li>
+                    <li><a href="#research" class="nav-link"><i class="fas fa-flask"></i> 研究方向</a></li>
+                    <li><a href="#publications" class="nav-link"><i class="fas fa-book"></i> 学术成果</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-code-branch"></i> 项目</a></li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <p class="quote">"交叉学科探索者"</p>
+            </div>
+        </aside>
+        
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Bruce Liang</h1>
+                <div class="header-decoration"></div>
+            </header>
+            
+            <section id="about" class="section">
+                <h2 class="section-title">关于我 <span class="title-decoration"></span></h2>
+                <div class="about-content">
+                    <p class="greeting">你好! 我是 <span class="highlight">Bruce Liang</span>。<span class="emoji">👋</span></p>
+                    <p>我目前在<span class="highlight">浙江大学</span>攻读数智创新管理博士学位，我的导师是 <a href="#" class="link">WJ</a> 教授。</p>
+                    <p>在此之前，我曾在浙江大学 <a href="#" class="link">LeadLab</a> 完成应用心理学硕士学位，师从 <a href="#" class="link">LZG</a> 教授。我的本科毕业于江南大学土木工程专业。</p>
+                    
+                    <div class="academic-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-university"></i> 教育背景</h3>
+                            <ul>
+                                <li><strong>博士</strong> - 浙江大学 - 数智创新管理 (在读)</li>
+                                <li><strong>硕士</strong> - 浙江大学 - 应用心理学 (2020)</li>
+                                <li><strong>学士</strong> - 江南大学 - 土木工程 (2016)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3><i class="fas fa-briefcase"></i> 经历</h3>
+                            <ul>
+                                <li><strong>浙江大学 LeadLab</strong> - 研究生 (2018-2020)</li>
+                                <li><strong>浙江大学</strong> - 博士研究生 (2021-至今)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="research" class="section">
+                <h2 class="section-title">研究方向 <span class="title-decoration"></span></h2>
+                <p class="section-intro">我的研究跨越组织行为学、创新战略管理和计算社会科学领域。特别关注以下研究方向：</p>
+                
+                <div class="research-interests">
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h3>计算社会科学</h3>
+                            <p>运用计算方法和大数据分析技术研究社会科学问题，结合定量与定性方法探索组织行为和社会现象。</p>
+                            <div class="tags">
+                                <span class="tag">大数据分析</span>
+                                <span class="tag">社会网络分析</span>
+                                <span class="tag">文本挖掘</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h3>AI-agent与仿真建模</h3>
+                            <p>利用人工智能代理和仿真建模技术模拟组织行为和社会互动，研究复杂系统中的涌现现象。</p>
+                            <div class="tags">
+                                <span class="tag">多智能体系统</span>
+                                <span class="tag">仿真模型</span>
+                                <span class="tag">复杂系统</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h3>组织行为与创新管理</h3>
+                            <p>研究组织中的人际互动、领导力发展和创新行为，探索数字化转型背景下的组织创新战略。</p>
+                            <div class="tags">
+                                <span class="tag">组织行为学</span>
+                                <span class="tag">创新战略</span>
+                                <span class="tag">领导力研究</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-container">
+                    <h3 class="skills-title">技能与工具</h3>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <span class="skill-name">数据分析</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">仿真建模</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">计算社会科学方法</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">人工智能应用</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="publications" class="section">
+                <h2 class="section-title">学术成果 <span class="title-decoration"></span></h2>
+                <div class="publications-filter">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2023">2023</button>
+                    <button class="filter-btn" data-filter="conference">会议论文</button>
+                    <button class="filter-btn" data-filter="journal">期刊论文</button>
+                </div>
+                
+                <div class="publications-container">
+                    <div class="publication-item" data-year="2024" data-type="conference">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#" target="_blank">AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios</a>
+                                <span class="paper-badge">Preprint</span>
+                            </h3>
+                            <p class="publication-authors">
+                                <span class="author self">Bruce Liang*</span>, Jingcong Liang*, Jiayu Lin*, Xinnong Zhang*, Xiawei Liu, Shiyue Yang, Rong Ye, Lei Chen, Haoyu Kuang, Xuanjing Huang, Zhongyu Wei.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link" title="PDF"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-link" title="Code"><i class="fas fa-code"></i> 代码</a>
+                                <a href="#" class="pub-link" title="Dataset"><i class="fas fa-database"></i> 数据集</a>
+                                <a href="#" class="pub-link" title="Demo"><i class="fas fa-play-circle"></i> 演示</a>
+                                <button class="abstract-toggle"><i class="fas fa-chevron-down"></i> 摘要</button>
+                            </div>
+                            <div class="publication-abstract hidden">
+                                <p>本文提出了一个面向语言智能体社会智能的基准测试框架，通过交互式场景评估大语言模型在社交场景中的表现能力。主要贡献包括设计了一系列互动场景，建立了多维度评估指标，并分析了当前语言模型在社会智能方面的能力与局限。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-item" data-year="2024" data-type="conference">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#" target="_blank">Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation</a>
+                                <span class="paper-badge">ACL-Findings</span>
+                            </h3>
+                            <p class="publication-authors">
+                                <span class="author self">Bruce Liang</span>, Zhongyu Wei, Xuanjing Huang.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link" title="PDF"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-link" title="Code"><i class="fas fa-code"></i> 代码</a>
+                                <button class="abstract-toggle"><i class="fas fa-chevron-down"></i> 摘要</button>
+                            </div>
+                            <div class="publication-abstract hidden">
+                                <p>本研究探索了基于智能体的大规模社会运动模拟方法，提出了一种新的框架来揭示社会运动中的真相并促进变革。我们构建了一个多智能体系统，能够模拟大规模社会互动和信息传播过程，为理解社会动态提供了新的计算方法。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-item" data-year="2023" data-type="journal">
+                        <div class="publication-year">2023</div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">
+                                <a href="#" target="_blank">探索大语言模型在社会科学研究中的应用与伦理挑战</a>
+                                <span class="paper-badge">Journal</span>
+                            </h3>
+                            <p class="publication-authors">
+                                <span class="author self">Bruce Liang</span>, 某某某, 某某.
+                            </p>
+                            <div class="publication-links">
+                                <a href="#" class="pub-link" title="PDF"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <button class="abstract-toggle"><i class="fas fa-chevron-down"></i> 摘要</button>
+                            </div>
+                            <div class="publication-abstract hidden">
+                                <p>本文对大语言模型在社会科学研究中的应用前景进行了全面分析，同时深入探讨了相关的伦理挑战和解决方案。研究指出了语言模型在分析社会现象、模拟人类行为和辅助理论构建方面的潜力，并提出了减轻潜在偏见和确保研究伦理的方法。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="citation-info">
+                    <p class="note">* 表示共同第一作者</p>
+                </div>
+            </section>
+            
+            <section id="projects" class="section">
+                <h2 class="section-title">项目 <span class="title-decoration"></span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-sitemap project-icon"></i>
+                            <h3>组织行为仿真系统</h3>
+                        </div>
+                        <p class="project-desc">基于多智能体的组织行为仿真系统，模拟不同领导风格和组织结构对创新行为的影响。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">多智能体</span>
+                            <span class="tech-tag">仿真模型</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> 代码库</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> 演示</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-comments project-icon"></i>
+                            <h3>社会网络分析平台</h3>
+                        </div>
+                        <p class="project-desc">针对组织内部社交网络的分析平台，可视化关键人物影响力和信息流动路径。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">社会网络分析</span>
+                            <span class="tech-tag">数据可视化</span>
+                            <span class="tech-tag">图算法</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> 代码库</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-drone project-icon"></i>
+                            <h3>航拍摄影集</h3>
+                        </div>
+                        <p class="project-desc">个人航拍作品集，记录中国各地自然风光和城市景观，结合剪辑技术呈现独特视角。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">航拍</span>
+                            <span class="tech-tag">摄影</span>
+                            <span class="tech-tag">视频剪辑</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-image"></i> 作品集</a>
+                            <a href="#" class="project-link"><i class="fab fa-youtube"></i> 视频</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="footer">
+                <p>&copy; 2024 Bruce Liang. 保留所有权利。</p>
+                <p class="footer-note">本网站使用 <a href="https://html5up.net/" target="_blank">HTML5</a> 和 <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> 构建</p>
+                <p class="update-time">最后更新: <span id="last-update"></span></p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
