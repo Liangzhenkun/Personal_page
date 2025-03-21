@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // 添加入场动画
-    const animateElements = document.querySelectorAll('.section, .info-card, .interest-card, .publication-item, .project-card');
+    const animateElements = document.querySelectorAll('.section, .info-card, .interest-card, .publication-item, .project-card, .reading-card, .photo-item, .collection-item, .moment-item');
     
     const observerOptions = {
         root: null,
@@ -183,5 +183,29 @@ document.addEventListener('DOMContentLoaded', function() {
     
     animateElements.forEach(element => {
         observer.observe(element);
+    });
+    
+    // 生活之光标签切换功能
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // 移除所有按钮的活动状态
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // 添加当前按钮的活动状态
+            button.classList.add('active');
+            
+            const tabId = button.getAttribute('data-tab');
+            
+            // 隐藏所有内容
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+            
+            // 显示选中的内容
+            document.getElementById(tabId).classList.remove('hidden');
+        });
     });
 }); 
