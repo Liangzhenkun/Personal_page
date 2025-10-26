@@ -105,37 +105,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 语言切换功能
-    const zhBtn = document.getElementById('zh-btn');
-    const enBtn = document.getElementById('en-btn');
-    
-    if (zhBtn && enBtn) {
-        // 检查当前页面是否为中文版
-        const isChinesePage = window.location.pathname.endsWith('index.html') || 
-                             window.location.pathname.endsWith('/') || 
-                             window.location.pathname.endsWith('/personal-academic-website/');
-        
-        // 设置初始按钮状态
-        if (isChinesePage) {
-            zhBtn.classList.add('active');
-            enBtn.classList.remove('active');
-        } else {
-            enBtn.classList.add('active');
-            zhBtn.classList.remove('active');
-        }
-        
+    var zhBtn = document.getElementById('zh-btn');
+    var enBtn = document.getElementById('en-btn');
+    var hash = window.location.hash || '';
+
+    if (zhBtn) {
         zhBtn.addEventListener('click', function() {
-            if (!this.classList.contains('active')) {
-                this.classList.add('active');
-                enBtn.classList.remove('active');
-                window.location.href = 'index.html';
+            var target = 'index.html' + hash;
+            if (!location.pathname.endsWith('index.html')) {
+                location.href = target;
             }
         });
-        
+    }
+
+    if (enBtn) {
         enBtn.addEventListener('click', function() {
-            if (!this.classList.contains('active')) {
-                this.classList.add('active');
-                zhBtn.classList.remove('active');
-                window.location.href = 'en.html';
+            var target = 'en.html' + hash;
+            if (!location.pathname.endsWith('en.html')) {
+                location.href = target;
             }
         });
     }
@@ -208,4 +195,4 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById(tabId).classList.remove('hidden');
         });
     });
-}); 
+});
